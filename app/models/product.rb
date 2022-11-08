@@ -1,4 +1,4 @@
-class Products <ActiveRecord::Base
+class Product <ActiveRecord::Base
     has_many :buyers
     
 end
