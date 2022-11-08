@@ -92,7 +92,34 @@ class ApplicationController < Sinatra::Base
     end
 
 
-    
+#### crud for orders ####
+
+   # to get all orders
+    get "/orders" do
+        Order.all.to_json
+    end
+
+   #get one order
+    get '/orders/:id' do
+        Order.find(params[:id]).to_json
+    end
+
+    # post in products
+    post "/orders" do
+         orders=Order.create(
+         name: params[:name],
+         price: params[:price],
+         description: params[:description]
+    )
+    products.to_json
+    end
+
+    # delete in products
+    delete "/products/:id" do
+         orders = Order.find(params[:id])
+         orders.destroy
+         {message: "Your order'#{products.name}' has been deleted."}.to_json
+    end
 
 
 

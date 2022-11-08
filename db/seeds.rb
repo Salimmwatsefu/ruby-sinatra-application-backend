@@ -7,24 +7,6 @@ puts "🌱 Seeding data..."
 
 # place your seeds here
 
-#product dummy data
-Product.create(
-    name: "Samsung",
-    price: 20,
-    description: "Note Series"
-)
-
-Product.create(
-    name: "Iphone 13",
-    price: 50,
-    description: "256 GB"
-)
-
-Product.create(
-    name: "Iphone 29",
-    price: 1050,
-    description: "3 TB"
-)
 
 
 puts "🌱 Done seeding!"
