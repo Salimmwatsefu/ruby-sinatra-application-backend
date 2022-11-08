@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
         response.headers["Access-Control-Allow-Methods"]="GET,POST,PUT,PATCH,DELETE,OPTIONS"
     end
 
-    #### crud for buyers #####
+#### crud for buyers #####
 
      # to get all buyers
         get "/buyers" do
@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
         end
 
 
-    #### crud for sellers ####
+#### crud for sellers ####
 
     # to get all sellers
         get "/sellers" do
@@ -61,21 +61,38 @@ class ApplicationController < Sinatra::Base
 
 
 
-    #### crud for products ####
+#### crud for products ####
 
     # to get all products
        get "/products" do
            Product.all.to_json
        end
-       
+
 
     #get one product
     get '/products/:id' do
         Product.find(params[:id]).to_json
     end
 
+    # post in products
+    post "/products" do
+        products=Product.create(
+            name: params[:name],
+            price: params[:price],
+            description: params[:description]
+        )
+        products.to_json
+    end
+
+    # delete in products
+    delete "/products/:id" do
+        products = Product.find(params[:id])
+        products.destroy
+        {message: "'#{products.name}' has been deleted."}.to_json
+    end
 
 
+    
 
 
 
