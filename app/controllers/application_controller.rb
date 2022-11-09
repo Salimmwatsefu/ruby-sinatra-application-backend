@@ -121,7 +121,14 @@ class ApplicationController < Sinatra::Base
          {message: "Your order'#{products.name}' has been deleted."}.to_json
     end
 
-
+    post '/login' do
+        user = Buyer.find_by(params[:buyer][:email])
+        if user.password == params[:buyer][:password]
+            user.to_json
+        else
+          {message: "Invalid email or password"}
+        end
+      end
 
         
 end
