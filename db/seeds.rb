@@ -54,4 +54,11 @@ Product.create(name:"Sayona Tv",category:"Televisions",description:"This is the 
         
         Order today at Jumia Kenya and have delivered at your door step",image:"https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/98/090626/1.jpg?1638",price:73000)
 
+    Product.create(name:"XIAOMI Redmi",category:"Phones",description:"XIAOMI Redmi 10A, 6.53 3GB+64GB, 13.0MP, 5000mAh, 4G LTE, Dual SIM - Graphite Grey",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/62/615956/1.jpg?0358",price:12999)
+    Product.create(name:"Infinix Smart 6",category:"Phones",description:"Infinix Smart 6, 6.6 2GB RAM, 32GB, 5000mAh,Polar Black",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/05/853736/1.jpg?9221",price:10000)
+    Product.create(name:"UMIDIGI G1 ",category:"Phones",description:"UMIDIGI G1 (2GB,32GB ROM) 6.52 HD+ 5150mAh Android Smartphone Unlocked -Galaxy Blue",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/79/626849/1.jpg?6347",price:8999)
+    Product.create(name:"XIAOMI Mi Smart Band 6",category:"Phones",description:"XIAOMI Mi Smart Band 6",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/17/275093/1.jpg?8221",price:3999)
+    Product.create(name:"Tecno Spark 8P",category:"Phones",description:"Tecno Spark 8P, 6.6 64GB + 4GB RAM (Dual SIM), 5000mAh, Turquoise Cyan",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/96/660079/1.jpg?1867",price:13830)
+    Product.create(name:"Tecno CAMON 19",category:"Phones",description:"Tecno CAMON 19, 6.8 128GB+ 4GB (Dual SIM), (4G LTE) 5000mAh, Eco Black",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/12/541307/1.jpg?0725",price:21399)
+
 puts "🌱 Done seeding!"
