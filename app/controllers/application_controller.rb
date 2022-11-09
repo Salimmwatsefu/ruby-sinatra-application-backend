@@ -122,13 +122,14 @@ class ApplicationController < Sinatra::Base
     end
 
     post '/login' do
-        user = Buyer.find_by(params[:buyer][:email])
-        if user.password == params[:buyer][:password]
+        puts params
+        user = Buyer.find_by(email: params["email"])
+        if user.password == params["password"]
             user.to_json
         else
-          {message: "Invalid email or password"}
+          {message: "Invalid email or password"}.to_json
         end
-      end
+    end
 
         
 end
