@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
 
 #### crud for buyers #####
 
-     # to get all buyers
+        # to get all buyers
         get "/buyers" do
             Buyer.all.to_json
         end
@@ -64,9 +64,9 @@ class ApplicationController < Sinatra::Base
 #### crud for products ####
 
     # to get all products
-       get "/products" do
-           Product.all.to_json
-       end
+        get "/products" do
+            Product.all.to_json
+        end
 
 
     #get one product
@@ -94,31 +94,31 @@ class ApplicationController < Sinatra::Base
 
 #### crud for orders ####
 
-   # to get all orders
+    # to get all orders
     get "/orders" do
         Order.all.to_json
     end
 
-   #get one order
+    #get one order
     get '/orders/:id' do
         Order.find(params[:id]).to_json
     end
 
     # post in products
     post "/orders" do
-         orders=Order.create(
-         name: params[:name],
-         price: params[:price],
-         description: params[:description]
+            orders=Order.create(
+            name: params[:name],
+            price: params[:price],
+            description: params[:description]
     )
     products.to_json
     end
 
     # delete in products
     delete "/products/:id" do
-         orders = Order.find(params[:id])
-         orders.destroy
-         {message: "Your order'#{products.name}' has been deleted."}.to_json
+            orders = Order.find(params[:id])
+            orders.destroy
+            {message: "Your order'#{products.name}' has been deleted."}.to_json
     end
 
     post '/login' do
@@ -127,9 +127,8 @@ class ApplicationController < Sinatra::Base
         if user.password == params["password"]
             user.to_json
         else
-          {message: "Invalid email or password"}.to_json
+            {message: "Invalid email or password"}.to_json
         end
     end
-
         
 end
