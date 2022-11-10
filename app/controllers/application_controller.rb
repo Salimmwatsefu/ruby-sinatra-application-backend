@@ -96,11 +96,11 @@ class ApplicationController < Sinatra::Base
     # post in orders
     post "/orders" do
             orders=Order.create(
-            buyer_id: params[:buyer.name],
-            price: params[:price],
-            description: params[:description]
-    )
-    products.to_json
+                product_id: params[:product_id],
+                buyer_id: params[:buyer_id],
+                total: params[:total]
+        )
+        orders.to_json
     end
 
     # delete in products
