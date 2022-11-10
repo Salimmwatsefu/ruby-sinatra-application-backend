@@ -1,6 +1,8 @@
 puts "🌱 Seeding data..."
 
 # place your seeds here
+
+## TVs ##
 Product.create(name:"Sayona Tv",category:"Televisions",description:"This is the Newest wide range of LED  from WEYON electronic. WEYON electronic launched this new technology as a means of opening a new era for smartphone and the Internet products which means the company brings together the smart technologies into smart TV so as to offer a new seamless way to enjoy media.
 
     synchronously every day.5000+ TV applications, explore infinite entertainment options.image 
@@ -54,11 +56,52 @@ Product.create(name:"Sayona Tv",category:"Televisions",description:"This is the 
         
         Order today at Jumia Kenya and have delivered at your door step",image:"https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/98/090626/1.jpg?1638",price:73000)
 
+
+
+##Mobile Phones##
+
     Product.create(name:"XIAOMI Redmi",category:"Phones",description:"XIAOMI Redmi 10A, 6.53 3GB+64GB, 13.0MP, 5000mAh, 4G LTE, Dual SIM - Graphite Grey",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/62/615956/1.jpg?0358",price:12999)
     Product.create(name:"Infinix Smart 6",category:"Phones",description:"Infinix Smart 6, 6.6 2GB RAM, 32GB, 5000mAh,Polar Black",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/05/853736/1.jpg?9221",price:10000)
     Product.create(name:"UMIDIGI G1 ",category:"Phones",description:"UMIDIGI G1 (2GB,32GB ROM) 6.52 HD+ 5150mAh Android Smartphone Unlocked -Galaxy Blue",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/79/626849/1.jpg?6347",price:8999)
     Product.create(name:"XIAOMI Mi Smart Band 6",category:"Phones",description:"XIAOMI Mi Smart Band 6",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/17/275093/1.jpg?8221",price:3999)
     Product.create(name:"Tecno Spark 8P",category:"Phones",description:"Tecno Spark 8P, 6.6 64GB + 4GB RAM (Dual SIM), 5000mAh, Turquoise Cyan",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/96/660079/1.jpg?1867",price:13830)
     Product.create(name:"Tecno CAMON 19",category:"Phones",description:"Tecno CAMON 19, 6.8 128GB+ 4GB (Dual SIM), (4G LTE) 5000mAh, Eco Black",image:"https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/12/541307/1.jpg?0725",price:21399)
+
+##Laptops
+
+Product.create(name:"MacBook Pro 14-inch",category:"Laptops",
+    description:"16-core Neural Engine
+                 14-inch Liquid Retina XDR display,
+                 Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port,
+                 Magic Keyboard with Touch ID",
+    image:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-14-digitalmat-gallery-1-202111?wid=364&hei=333&fmt=png-alpha&.v=1635183223000",price:239,880)
+
+Product.create(
+    name:"HP Spectre x360 2-in-1",
+    category:"Laptops",
+    description:"Windows 11 Home, 12th Generation Intel® Core™ i5 processor, Intel® Iris® Xᵉ Graphics, 8 GB memory; 512 GB SSD storage, 13.5",
+    image:"https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08279287.png?imwidth=270&imdensity=1",price:89,000)
+
+Product.create(
+    name:"Dell Inspiron 3493",
+    category:"Laptops",
+    description:"14inch, HD Laptop, 10th Generation, Intel Core i7-1065G7, Upto 3.9GHz, 8GB, DDR4, RAM 512GB ",
+    image:"https://www.saruk.co.ke/images/83231645259983.jpg",price:75,999)
+
+Product.create(
+    name:"ThinkPad L13 Yoga Gen 3",
+    category:"Laptops",
+    description:"Built for business with up to Intel vPro® Essentials,
+                13.3inch laptop with optional Intel® Iris® Xe graphics,
+                Enhanced AI-powered security with one-touch login",
+    image:"https://www.lenovo.com/medias/lenovo-laptops-thinkpad-l13-yoga-gen-3-13-intel-series.png?context=bWFzdGVyfHJvb3R8NDU3ODU4fGltYWdlL3BuZ3xoMDEvaGFkLzE0MzMxODQxOTM3NDM4LnBuZ3w3NjM2YzJhMDE0OGNhY2IzN2IzMTAzNDE3MzBlM2MwNGFlZGEyNTE4OTI0NTI1ZGZlM2Y1ZjhiZTVjNGQ1MmQ1",price:50,000)
+
+Product.create(
+    name:"V14 Gen 2",
+    category:"Laptops",
+    description:"14inch Intel®-based SMB laptop,
+                Sleek, powerful, & secure,
+                Dedicated graphics option",
+    image:"https://www.lenovo.com/medias/lenovo-laptops-v-series-v14-gen2-14inch-intel-series.png?context=bWFzdGVyfHJvb3R8NTI2ODR8aW1hZ2UvcG5nfGgzYi9oM2EvMTQxODY5MTkzMjk4MjIucG5nfGY1YjliYzUxOWQzMjhkMTNkNDg4ZjY0YTM0ZTIxZjgyOWFkYjE0MjYzZjIwMzNlNjRhN2VjMTA5ZDdjYzkxNzY",price:)
 
 puts "🌱 Done seeding!"
