@@ -1,6 +1,8 @@
 puts "🌱 Seeding data..."
 
 # place your seeds here
+##seller##
+Seller.create(name:"admin", email:"admin@gmail.com", password:"12345")
 
 ## TVs ##
 Product.create(name:"Sayona Tv",category:"Televisions",description:"This is the Newest wide range of LED  from WEYON electronic. WEYON electronic launched this new technology as a means of opening a new era for smartphone and the Internet products which means the company brings together the smart technologies into smart TV so as to offer a new seamless way to enjoy media.
@@ -74,19 +76,19 @@ Product.create(name:"MacBook Pro 14-inch",category:"Laptops",
                  14-inch Liquid Retina XDR display,
                  Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port,
                  Magic Keyboard with Touch ID",
-    image:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-14-digitalmat-gallery-1-202111?wid=364&hei=333&fmt=png-alpha&.v=1635183223000",price:239,880)
+    image:"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-14-digitalmat-gallery-1-202111?wid=364&hei=333&fmt=png-alpha&.v=1635183223000",price:239880)
 
 Product.create(
     name:"HP Spectre x360 2-in-1",
     category:"Laptops",
     description:"Windows 11 Home, 12th Generation Intel® Core™ i5 processor, Intel® Iris® Xᵉ Graphics, 8 GB memory; 512 GB SSD storage, 13.5",
-    image:"https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08279287.png?imwidth=270&imdensity=1",price:89,000)
+    image:"https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08279287.png?imwidth=270&imdensity=1",price:89000)
 
 Product.create(
     name:"Dell Inspiron 3493",
     category:"Laptops",
     description:"14inch, HD Laptop, 10th Generation, Intel Core i7-1065G7, Upto 3.9GHz, 8GB, DDR4, RAM 512GB ",
-    image:"https://www.saruk.co.ke/images/83231645259983.jpg",price:75,999)
+    image:"https://www.saruk.co.ke/images/83231645259983.jpg",price:75999)
 
 Product.create(
     name:"ThinkPad L13 Yoga Gen 3",
@@ -94,7 +96,7 @@ Product.create(
     description:"Built for business with up to Intel vPro® Essentials,
                 13.3inch laptop with optional Intel® Iris® Xe graphics,
                 Enhanced AI-powered security with one-touch login",
-    image:"https://www.lenovo.com/medias/lenovo-laptops-thinkpad-l13-yoga-gen-3-13-intel-series.png?context=bWFzdGVyfHJvb3R8NDU3ODU4fGltYWdlL3BuZ3xoMDEvaGFkLzE0MzMxODQxOTM3NDM4LnBuZ3w3NjM2YzJhMDE0OGNhY2IzN2IzMTAzNDE3MzBlM2MwNGFlZGEyNTE4OTI0NTI1ZGZlM2Y1ZjhiZTVjNGQ1MmQ1",price:50,000)
+    image:"https://www.lenovo.com/medias/lenovo-laptops-thinkpad-l13-yoga-gen-3-13-intel-series.png?context=bWFzdGVyfHJvb3R8NDU3ODU4fGltYWdlL3BuZ3xoMDEvaGFkLzE0MzMxODQxOTM3NDM4LnBuZ3w3NjM2YzJhMDE0OGNhY2IzN2IzMTAzNDE3MzBlM2MwNGFlZGEyNTE4OTI0NTI1ZGZlM2Y1ZjhiZTVjNGQ1MmQ1",price:50000)
 
 Product.create(
     name:"V14 Gen 2",
@@ -102,6 +104,6 @@ Product.create(
     description:"14inch Intel®-based SMB laptop,
                 Sleek, powerful, & secure,
                 Dedicated graphics option",
-    image:"https://www.lenovo.com/medias/lenovo-laptops-v-series-v14-gen2-14inch-intel-series.png?context=bWFzdGVyfHJvb3R8NTI2ODR8aW1hZ2UvcG5nfGgzYi9oM2EvMTQxODY5MTkzMjk4MjIucG5nfGY1YjliYzUxOWQzMjhkMTNkNDg4ZjY0YTM0ZTIxZjgyOWFkYjE0MjYzZjIwMzNlNjRhN2VjMTA5ZDdjYzkxNzY",price:)
+    image:"https://www.lenovo.com/medias/lenovo-laptops-v-series-v14-gen2-14inch-intel-series.png?context=bWFzdGVyfHJvb3R8NTI2ODR8aW1hZ2UvcG5nfGgzYi9oM2EvMTQxODY5MTkzMjk4MjIucG5nfGY1YjliYzUxOWQzMjhkMTNkNDg4ZjY0YTM0ZTIxZjgyOWFkYjE0MjYzZjIwMzNlNjRhN2VjMTA5ZDdjYzkxNzY",price:30000)
 
 puts "🌱 Done seeding!"
