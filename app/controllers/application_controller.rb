@@ -96,8 +96,8 @@ class ApplicationController < Sinatra::Base
     # post in orders
     post "/orders" do
             orders=Order.create(
-                product_id: params[:product_id],
-                buyer_id: params[:buyer_id],
+                product_name: params[:product_name],
+                buyer_name: params[:buyer_name],
                 total: params[:total]
         )
         orders.to_json
