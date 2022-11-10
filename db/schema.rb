@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 2022_11_09_123927) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "buyer_id"
+    t.string "product_name"
+    t.string "buyer_name"
     t.integer "total"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
