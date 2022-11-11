@@ -103,12 +103,14 @@ class ApplicationController < Sinatra::Base
         orders.to_json
     end
 
-    # delete in products
-    delete "/products/:id" do
-            orders = Order.find(params[:id])
-            orders.destroy
-            {message: "Your order'#{products.name}' has been deleted."}.to_json
+
+    # delete in order
+    delete "/order/:id" do
+        orders = Order.find(params[:id])
+        orders.destroy
+        {message: "'#{orders.name}' has been deleted."}.to_json
     end
+
 
     post '/login' do
         #puts params
