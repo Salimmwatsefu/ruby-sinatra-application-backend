@@ -102,7 +102,7 @@ Product.create(
     name:"V14 Gen 2",
     category:"Laptops",
     description:"14inch Intel®-based SMB laptop,
-                Sleek, powerful, & secure,
+                Sleek, powerful, & very secure,
                 Dedicated graphics option",
     image:"https://www.lenovo.com/medias/lenovo-laptops-v-series-v14-gen2-14inch-intel-series.png?context=bWFzdGVyfHJvb3R8NTI2ODR8aW1hZ2UvcG5nfGgzYi9oM2EvMTQxODY5MTkzMjk4MjIucG5nfGY1YjliYzUxOWQzMjhkMTNkNDg4ZjY0YTM0ZTIxZjgyOWFkYjE0MjYzZjIwMzNlNjRhN2VjMTA5ZDdjYzkxNzY",price:30000)
 
